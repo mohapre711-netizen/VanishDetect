@@ -2,11 +2,11 @@ plugins {
     id 'fabric-loom' version '1.9-SNAPSHOT'
 }
 
-version = project.mod_version
-group = project.mod_group
+version = '1.0.0'
+group = 'com.vanished'
 
 base {
-    archivesName = project.mod_id
+    archivesName = 'vanishdetect'
 }
 
 repositories {
@@ -15,12 +15,10 @@ repositories {
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    
-    // هذا السطر السحري يعتمد خرائط موجانج الرسمية تلقائياً ويمنع فشل التحميل
+    // تحديد إصدار ماين كرافت والمكتبات بشكل صريح ومباشر هنا
+    minecraft "com.mojang:minecraft:1.21.4"
     mappings loom.officialMojangMappings()
-    
-    loader "net.fabricmc:fabric-loader:${project.loader_version}"
+    loader "net.fabricmc:fabric-loader:0.16.10"
 }
 
 processResources {
