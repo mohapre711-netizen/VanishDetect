@@ -16,7 +16,10 @@ repositories {
 
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    
+    // هذا السطر السحري يعتمد خرائط موجانج الرسمية تلقائياً ويمنع فشل التحميل
+    mappings loom.officialMojangMappings()
+    
     loader "net.fabricmc:fabric-loader:${project.loader_version}"
 }
 
