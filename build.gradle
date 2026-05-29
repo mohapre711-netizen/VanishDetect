@@ -9,6 +9,12 @@ base {
     archivesName = project.mod_id
 }
 
+// الكود الجديد المضاف لتحديد مكان تحميل مكتبات ماين كرافت وفابريك
+repositories {
+    maven { url = "https://maven.fabricmc.net/" }
+    mavenCentral()
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
@@ -32,4 +38,3 @@ java {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
 }
-
