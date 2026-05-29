@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "vanishdetect",
+  "version": "1.0.0",
+  "name": "Vanish & Invisibility Detector",
+  "description": "Makes invisible players visible with a glowing outline.",
+  "environment": "client",
+  "entrypoints": {},
+  "mixins": [
+    "vanishdetect.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.4"
+  }
+}
+
