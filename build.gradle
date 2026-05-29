@@ -9,7 +9,6 @@ base {
     archivesName = project.mod_id
 }
 
-// الكود الجديد المضاف لتحديد مكان تحميل مكتبات ماين كرافت وفابريك
 repositories {
     maven { url = "https://maven.fabricmc.net/" }
     mavenCentral()
@@ -31,10 +30,10 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-    it.options.release = 17
+    it.options.release = 21
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 }
